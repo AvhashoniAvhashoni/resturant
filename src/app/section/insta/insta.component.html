@@ -1,0 +1,20 @@
+<section class="section p-0">
+    <div class="container">
+        <div class="text-center mt-5">
+            <h2 class="text-warning display-3">Instagram</h2>
+        </div>
+        <div class="card shadow p-4 my-5">
+            <p class="px-1">
+                <span class="float-right btn btn-link font-weight-light py-1 px-0 m-0">Following 65</span>
+                <img src="/assets/logo/insta.jpg" alt="image" height="20">
+                Instagram
+            </p>
+            <div class="row p-0 m-0">
+                <div class="col-6 col-md-3 p-0 m-0" *ngFor="let p of photos; let i = index" [lightbox]="i"
+                    [gallery]="galleryId">
+                    <img [src]="p" alt="image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

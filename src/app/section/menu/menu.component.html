@@ -1,0 +1,167 @@
+<section class="section p-0">
+    <div class="container">
+        <div class="mt-5">
+            <h2 class="text-center text-warning display-3">New in Menu</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center pb-3">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 p-2">
+                    <div class="card shadow"
+                        style="background-image: url('https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        <div class="content text-white p-2 p-md-3">
+                            <div class="order-details">
+                                <h4 class="text-white m-0 text-uppercase font-weight-bold">kjdskjdsk</h4>
+                                <small>kjdskjklds / djfkjhdfk / drjrr</small>
+                                <p class="mb-2 mb-md-3">R 250.6</p>
+                            </div>
+                            <button class="btn btn-1 btn-warning text-capitalize float-right" type="button">
+                                Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row pb-2 pt-2">
+                        <div class="col-6 pl-2 pr-2">
+                            <div class="card shadow"
+                                style="background-image: url('https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                                <div class="content text-white p-1 p-md-2">
+                                    <div class="order-details">
+                                        <p class="mb-1 mb-md-2" style="font-size: 14px;">R 250.6</p>
+                                    </div>
+                                    <button class="btn btn-1 btn-sm btn-warning text-capitalize float-right"
+                                        type="button">
+                                        Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pl-2 pr-2">
+                            <div class="card shadow"
+                                style="background-image: url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                                <div class="content text-white p-1 p-md-2">
+                                    <div class="order-details">
+                                        <p class="mb-1 mb-md-2" style="font-size: 14px;">R 250.6</p>
+                                    </div>
+                                    <button class="btn btn-1 btn-sm btn-warning text-capitalize float-right"
+                                        type="button">
+                                        Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-6 pl-2 pr-2">
+                            <div class="card shadow"
+                                style="background-image: url('https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                                <div class="content text-white p-1 p-md-2">
+                                    <div class="order-details">
+                                        <p class="mb-1 mb-md-2" style="font-size: 14px;">R 250.6</p>
+                                    </div>
+                                    <button class="btn btn-1 btn-sm btn-warning text-capitalize float-right"
+                                        type="button">
+                                        Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pl-2 pr-2">
+                            <div class="card shadow"
+                                style="background-image: url('https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                                <div class="content text-white p-1 p-md-2">
+                                    <div class="order-details">
+                                        <p class="mb-1 mb-md-2" style="font-size: 14px;">R 250.6</p>
+                                    </div>
+                                    <button class="btn btn-1 btn-sm btn-warning text-capitalize float-right"
+                                        type="button">
+                                        Order
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 pt-3 pb-5 px-0">
+        <div class="text-center">
+            <h2 class="text-warning display-3">Our Menu</h2>
+            <!-- <div class="row justify-content-center">
+                <div class="col-lg-7 pb-3">
+                    <button class="btn btn-1 m-0" type="button" (click)="primaryBtn = true"
+                        [ngClass]="primaryBtn ? 'btn-success':'btn-neutral'">
+                        Veg
+                    </button>
+                    <button class="btn btn-1" type="button" (click)="primaryBtn = false"
+                        [ngClass]="!primaryBtn ? 'btn-warning':'btn-neutral'">
+                        Non-Veg
+                    </button>
+                </div>
+            </div> -->
+            <div class="row justify-content-center">
+                <div class="desktop col-lg-12">
+                    <a class="btn btn-link" (click)="menu = 1; addToGalary('All')"
+                        [ngClass]="menu == 1 ? 'text-warning font-weight-bold underline':'text-default font-weight-light'">
+                        All
+                    </a>
+                    <a class="btn btn-link" (click)="menu = 2; addToGalary('Breakfast')"
+                        [ngClass]="menu == 2 ? 'text-warning font-weight-bold underline':'text-default font-weight-light'">
+                        Breakfast
+                    </a>
+                    <a class="btn btn-link" (click)="menu = 3; addToGalary('Lunch')"
+                        [ngClass]="menu == 3 ? 'text-warning font-weight-bold underline':'text-default font-weight-light'">
+                        Lunch
+                    </a>
+                    <a class="btn btn-link" (click)="menu = 4; addToGalary('Dinner')"
+                        [ngClass]="menu == 4 ? 'text-warning font-weight-bold underline':'text-default font-weight-light'">
+                        Dinner
+                    </a>
+                    <a class="btn btn-link" (click)="menu = 5; addToGalary('Coffee')"
+                        [ngClass]="menu == 5 ? 'text-warning font-weight-bold underline':'text-default font-weight-light'">
+                        Coffee
+                    </a>
+                    <a class="btn btn-link" (click)="menu = 6; addToGalary('Snacks')"
+                        [ngClass]="menu == 6 ? 'text-warning font-weight-bold underline':'text-default font-weight-light'">
+                        Snacks
+                    </a>
+                </div>
+                <div class="col-3 mobile">
+                    <a class="btn btn-link text-default" *ngIf="menu != 1" (click)="menu = menu - 1; addToGalary(menuItems[menu-1])">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                </div>
+                <div class="col-6 mobile">
+                    <a class="btn btn-link text-warning font-weight-bold underline">
+                        {{menuItems[menu-1]}}
+                    </a>
+                </div>
+                <div class="col-3 mobile">
+                    <a class="btn btn-link text-default" *ngIf="menu != 6" (click)="menu = menu + 1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row px-0 my-3 my-md-4 mx-0">
+                <div class="col-6 col-md-3 p-0 m-0" *ngFor="let p of photos[menuItems[menu-1]]; let i = index"
+                    [lightbox]="i" [gallery]="galleryId">
+                    <img [src]="p" alt="image" class="img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <button class="btn btn-1 btn-warning w-100 mt-3 text-capitalize" type="button">
+                        View All
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

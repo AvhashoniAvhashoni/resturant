@@ -1,0 +1,51 @@
+<section class="section p-0" *ngIf="testimonal && testimonal.length > 0">
+    <div class="container px-0">
+        <div class="text-center mt-5">
+            <h2 class="text-warning display-3">Customer Story</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 pb-3">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7 img-card pt-md-5 px-3 pt-3">
+                <div class="card ml-md-0 ml-3"
+                    [ngStyle]="{ 'background-image': 'url(' + testimonal[index].image + ')'}">
+                </div>
+            </div>
+            <div class="col-5 px-0 pt-5">
+                <div class="row row1">
+                    <div class="col">
+                        <a class="btn btn-link text-default font-weight-light px-5" (click)="navigate('back')">
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                        <button class="btn btn-1 btn-neutral text-warning font-weight-light px-5" type="button"
+                            (click)="navigate('next')">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row py-4">
+                    <div class="col">
+                        <div class="card bg-warning shadow-lg border-0">
+                            <div class="p-4">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0 text-white small">
+                                        {{testimonal[index].quote}}
+                                    </p>
+                                    <footer class="blockquote-footer">
+                                        {{testimonal[index].name}}
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

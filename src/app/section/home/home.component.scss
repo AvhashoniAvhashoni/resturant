@@ -1,0 +1,28 @@
+.section-profile-cover {
+    height: 80vh;
+
+    .shape {
+        background-image     : url('https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-repeat    : no-repeat;
+        background-size      : cover;
+        filter               : brightness(40%);
+        background-position  : center;
+        background-attachment: fixed;
+    }
+
+    .container.py-5 {
+        position: relative;
+        top     : 20%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .section-profile-cover {
+        height: 100vh;
+
+        .container.py-5 {
+            position: relative;
+            top     : 30%;
+        }
+    }
+}

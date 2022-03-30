@@ -1,0 +1,90 @@
+.section {
+    .container {
+        .row {
+            .col-md-6 {
+                .card {
+                    background-repeat  : no-repeat;
+                    background-size    : cover;
+                    background-color   : rgba(0, 0, 0, 0.5);
+                    width              : 100%;
+                    position           : relative;
+                    background-position: center;
+
+                    .content {
+                        width   : 100%;
+                        position: absolute;
+                        bottom  : 0;
+
+                        .order-details {
+                            position: absolute;
+                            bottom  : 0;
+                        }
+                    }
+                }
+
+                .card::after {
+                    content         : "";
+                    background-color: rgba(0, 0, 0, 0.5);
+                    display         : block;
+                    padding-bottom  : 100%;
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        background-color: white;
+
+        .text-center {
+            .row {
+                .col-lg-7 {
+                    .btn-success {
+                        background: #2a9e3b;
+                    }
+
+                    .btn-neutral {
+                        color: #000;
+                    }
+
+                    .btn {
+                        font-weight   : 400;
+                        width         : 110px;
+                        text-transform: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.underline {
+    border-bottom: solid 2px #ae5b3d;
+}
+
+img:hover {
+    filter: brightness(50%);
+}
+
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        .text-center {
+            .row {
+                .col-lg-12.desktop {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container-fluid {
+        .text-center {
+            .row {
+                .mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}

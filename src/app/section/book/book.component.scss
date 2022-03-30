@@ -1,0 +1,16 @@
+section {
+    background-color: #000;
+}
+
+input.form-control {
+    background-color: #1e1c1d;
+    color           : #fff;
+}
+
+span.input-group-text {
+    background-color: #181818;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #fff;
+}
